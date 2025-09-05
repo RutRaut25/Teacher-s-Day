@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Teacher's Day!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 50px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #fff;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      color: #fff;
+      font-weight: 400;
+    }
+
+    .mom-photo {
+      margin: 20px auto;
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      border: 5px solid #fff;
+    }
+
+    .message {
+      margin: 40px auto;
+      max-width: 800px;
+      font-size: 1.2rem;
+      line-height: 1.8;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .message p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      margin: 50px 20px;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    /* Falling flowers animation */
+    .flower {
+      position: fixed;
+      top: -50px;
+      font-size: 24px;
+      animation: fall linear infinite;
+      color: pink;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-50px) rotate(0deg); }
+      100% { transform: translateY(100vh) rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌸 Happy Teacher's Day, Mom! 🌸</h1>
+    <h2>You are the best teacher in the world 💖</h2>
+    <!-- Mom's photo -->
+    <img src="mom.jpg" alt="My Mom" class="mom-photo">
+  </header>
+
+  <div class="message">
+    <p>Dear Mom,</p>
+
+    <p>On this special Teacher’s Day, I want to celebrate not only you as my mother but also as an incredible teacher who has touched so many lives with knowledge, kindness, and inspiration. You are more than just a teacher in a classroom — you are a mentor, a guide, and a source of light for everyone fortunate enough to learn from you.</p>
+
+    <p>I have seen how much effort, patience, and love you put into teaching your students. You don’t just share lessons from books, you share lessons of life — lessons about honesty, hard work, compassion, and never giving up. For your students, you are more than a teacher; you are someone they will always remember with gratitude and respect.</p>
+
+    <p>For me, you are the greatest teacher of all — because you were the first person to teach me about love, values, and dreams. You have taught me how to stand strong in difficult times, how to keep learning no matter what, and how to be kind even when the world isn’t. Every success I achieve in life will always have your teachings at its root.</p>
+
+    <p>On this day, I just want to say thank you, Mom. Thank you for being my guide, my role model, and my biggest inspiration. You are truly one in a million, and I am so proud to be your child.</p>
+
+    <p>Wishing you a very Happy Teacher’s Day! 🌸💖</p>
+
+    <p>With endless love and respect,<br>
+    Dhairya & Rut</p>
+  </div>
+
+  <footer>
+    Made with ❤️ for my Mom | Teacher’s Day 2025
+  </footer>
+
+  <script>
+    // Generate falling flowers
+    function createFlower() {
+      const flower = document.createElement("div");
+      flower.classList.add("flower");
+      flower.innerText = "🌸";
+      flower.style.left = Math.random() * window.innerWidth + "px";
+      flower.style.animationDuration = 4 + Math.random() * 3 + "s";
+      document.body.appendChild(flower);
+
+      setTimeout(() => {
+        flower.remove();
+      }, 7000);
+    }
+
+    setInterval(createFlower, 300);
+  </script>
+</body>
+</html>
